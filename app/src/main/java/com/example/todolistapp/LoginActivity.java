@@ -3,7 +3,10 @@ package com.example.todolistapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
+import android.app.Notification;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,12 +18,14 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.todolistapp.createChannel.CreateChannel;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -29,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
     TextView mCreateBtn,forgotTextLink;
     //ProgressBar progressBar;
     FirebaseAuth fAuth;
+    private NotificationManagerCompat notificationManagerCompat;
 
 
     @Override
@@ -36,6 +42,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        notificationManagerCompat = NotificationManagerCompat.from(this);
+        CreateChannel channel = new CreateChannel(this);
+        channel.createChannel();
+        
         mEmail = findViewById(R.id.inputEmail);
         mPassword = findViewById(R.id.inputPassword);
         //progressBar = findViewById(R.id.progressBar);
@@ -75,6 +85,14 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
+
+                            Notification notification = new NotificationCompat.Builder(LoginActivity.this, CreateChannel.CHANNEL_1).
+                                    setSmallIcon(R.drawable.icon)
+                                    .setContentTitle("Login")
+                                    .setContentText(" You are login successfully!!")
+                                    .setCategory(NotificationCompat.CATEGORY_MESSAGE)
+                                    .build();
+                            notificationManagerCompat.notify(1, notification);
                             Toast.makeText(LoginActivity.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         }else {
