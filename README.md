@@ -17,15 +17,14 @@ Login          |  Register                      | Login with Email & Password   
 Dashboard          |  Added Task                   | After Added Task              |  Swipe Left to Delete The Task 
 :----------------------------:|:--------------------------------------:|:----------------------:|:-----------------
  <img src = "TodoImage/5th.png" width="200" height="360"> |   <img src = "TodoImage/6th.png" width="200" height="360">        | <img src = "TodoImage/7th.png" width="200" height="360">   | <img src = "TodoImage/8th.png" width="200" height="360">
- #
- After Deteled The Task          |  Swipe Right to Update The Task                   | After Update The Task              |  Logout
-:----------------------------:|:--------------------------------------:|:----------------------:|:-----------------
- <img src = "TodoImage/9th.png" width="200" height="360"> |   <img src = "TodoImage/10th.png" width="200" height="360">        | <img src = "TodoImage/afterupdate.png.png" width="200" height="360">   | <img src = "TodoImage/11th.png" width="200" height="360">
- 
 #
- Forget Paasword          |  Rotate the Task 
+After Deteled The Task    |  Swipe Right to Update The Task       | After Update The Task     |  Logout
+:----------------------------:|:--------------------------------------:|:----------------------:|:-----------------
+ <img src = "TodoImage/9th.png" width="200" height="360"> |   <img src = "TodoImage/10th.png" width="200" height="360">        | <img src = "TodoImage/afterupdate.png" width="200" height="360">   | <img src = "TodoImage/11th.png" width="200" height="360">
+#
+Forget Paasword          |  Rotate the Task 
 :----------------------------:|:--------------------------------------
- <img src = "TodoImage/12th.png" width="200" height="360"> |   <img src = "TodoImage/RotateInterface.png" width="360" height="200">
+ <img src = "TodoImage/12th.png" width="200" height="360"> |   <img src = "TodoImage/RotateInterface.PNG" width="360" height="200">
  
  ## About Installation (Installing and using the App)
 #### ***1 Register/ Sign Up:*** : Fill the Required Information and Register.
