@@ -1,5 +1,5 @@
 # ToDoListApp
-Task is a simple to use to-do list app that can help you plan, track, and get more tasks done. You can create unlimited tasks, set status, give due dates, assign tasks to team members, create to-do list items in tasks, and assign them separately to team members.
+Task is a simple to use to-do list app that can help you plan, track, and get more tasks done. You can create unlimited tasks, set status, give due dates, assign tasks to team members, create to-do list items in tasks, and assign them separately to team members. 
 
 ## Features
 - Add, Delete, update and Read functionality(CRUD operation) for Todo task.
@@ -38,7 +38,7 @@ Forget Paasword          |  Rotate the Task
 
 # Documentation
 
-<b>Android Architecture components</b> are a collection of libraries that help you design robust, testable, and maintainable apps with more power over lifecycle management and data persistence.
+<b>Android Architecture components</b> are a collection of libraries that help you design robust, testable, and maintainable apps with more power over lifecycle management and data persistence. User need to login first to entered into application and all data were shows for all user. In future work, only user can see their data and other entry user can't able to see other user data.
 
 # MVVM
 Model–view–viewmodel (MVVM) is a software architectural pattern that facilitates the separation of the development of the graphical user interface (the view) be it via a markup language or GUI code from the development of the business logic or back-end logic (the model) so that the view is not dependent on any specific model platform. The view model of MVVM is a value converter,meaning the view model is responsible for exposing (converting) the data objects from the model in such a way that objects are easily managed and presented. In this respect, the view model is more model than view, and handles most if not all of the view's display logic.The view model may implement a mediator pattern, organizing access to the back-end logic around the set of use cases supported by the view.
@@ -51,4 +51,3 @@ There are 3 parts to the Model-View-ViewModel architecture:-
 Here is a typical high-level MVVM app architecture:
 
 <img src="TodoImage/MVVM.png" width="360" height="360">
- 
