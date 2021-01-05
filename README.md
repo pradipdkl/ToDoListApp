@@ -1,5 +1,5 @@
 # ToDoListApp
-Task is a simple to use to-do list app that can help you plan, track, and get more tasks done. You can create unlimited tasks, set status, give due dates, assign tasks to team members, create to-do list items in tasks, and assign them separately to team members. 
+Task is a simple to use to-do list app that can help you plan, track, and get more tasks done. You can create unlimited tasks, set status, assign tasks to team members, create to-do list task in tasks. 
 
 ## Features
 - Add, Delete, update and Read functionality(CRUD operation) for Todo task.
